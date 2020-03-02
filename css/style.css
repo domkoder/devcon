@@ -65,3 +65,66 @@ body {
   display: block;
   font-size: 1.56rem;
 }
+
+@media (max-width: 650px) {
+  .landing img {
+    width: 70%;
+  }
+
+  .landing h1 {
+    font: 2.5rem;
+  }
+
+  .countdown {
+    font-size: 1.87rem;
+  }
+
+  .countdown span {
+    display: block;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .countdown {
+    flex-direction: column;
+  }
+
+  .countdown div {
+    display: none;
+  }
+
+  .countdown div:first-child {
+    display: block;
+    width: 70%;
+    padding: 0.62rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .landing-inner {
+    padding-top: 2rem;
+  }
+
+  .landing img {
+    width: 20%;
+  }
+}
+
+@media (max-height: 450px) {
+  .landing-inner {
+    padding-top: 1rem;
+  }
+
+  .landing p {
+    display: none;
+  }
+
+  .landing h1 {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    font-size: 1.87rem;
+  }
+}
