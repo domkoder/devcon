@@ -9,26 +9,41 @@
     <title>Welcome to the DevConnector</title>
   </head>
   <body>
-    <nav class="navbar bg-dark">
-      <h1 class="navbar__heading">
-        <a class="navbar__logo" href="dashboard.html">
+    <nav class="navbar bg--dark">
+      <h1>
+        <a class="text--white" href="dashboard.html">
           <i class="fas fa-code">DevConnector</i>
         </a>
       </h1>
 
       <ul class="navbar__list">
         <li class="navbar__item navbar__item--active">
-          <a class="navbar__link" href="profiles.html">Developers</a>
+          <a class="navbar__link text--white" href="profiles.html">Developers</a>
         </li>
 
         <li class="navbar__item">
-          <a class="navbar__link href="register.html">Register</a>
+          <a class="navbar__link text--white" href="register.html">Register</a>
         </li>
 
         <li class="navbar__item">
-          <a class="navbar__link href="login.html">Login</a>
+          <a class="navbar__link text--white" href="login.html">Login</a>
         </li>
       </ul>
     </nav>
+
+    <section class="landing">
+      <div class="dark-overlay">
+        <div class="landing__inner">
+          <h1 class="text--x-large">Developer Connector</h1>
+          <p class="text--lead">
+            Create developer profile/portfolio, share post and get help form other developers.
+          </p>
+          <div class="buttons">
+            <a href="register.html" class="btn btn--primary">Sign up</a>
+            <a href="login.html" class="btn btn">Login</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
