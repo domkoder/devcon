@@ -1,18 +1,46 @@
-// Text styles
-.text--x-large {
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+/**
+ * Container                                      
+ **/
+.container {
+  max-width: $max-width;
+  margin: 6rem auto 3rem auto;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
-.text--large {
+.wrapper {
+  width: 60%;
+  margin: auto;
+  border: 3px solid $primary-color;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+/**
+ * Text styles                                           
+ **/
+.text--x-large {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
+.text--large {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
 .text--white {
   color: #fff;
+}
+
+.text--primary {
+  color: $primary-color;
 }
 
 .text--lead {
@@ -20,8 +48,10 @@
   margin-bottom: 1rem;
 }
 
-// Buttons
-.btn {
+/**
+ * Buttons styles                                           
+ **/
+%btn {
   display: inline-block;
   @include set-background($light-color);
   padding: 0.4rem 1.3rem;
@@ -33,37 +63,52 @@
   margin-right: 0.5rem;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in;
+}
+
+.btn--primary {
+  @extend %btn;
+  @include set-background($primary-color);
+  &:hover {
+    background: lighten($primary-color, 5%);
+  }
+}
+
+.btn--light {
+  @extend %btn;
+  @include set-background($light-color);
   &:hover {
     background-color: lighten($dark-color, $amount: 30%);
     color: #fff;
   }
-  &.btn--primary {
-    @include set-background($primary-color);
-    &:hover {
-      background: lighten($primary-color, 5%);
-    }
-  }
-  &.btn--dark {
-    @include set-background($dark-color);
-    &:hover {
-      background: lighten($dark-color, 5%);
-    }
-  }
-  &.btn--success {
-    @include set-background($success-color);
-    &:hover {
-      background: lighten($success-color, 5%);
-    }
-  }
-  &.btn--danger {
-    @include set-background($danger-color);
-    &:hover {
-      background: lighten($danger-color, 5%);
-    }
+}
+
+.btn--dark {
+  @extend %btn;
+  @include set-background($dark-color);
+  &:hover {
+    background: lighten($dark-color, 5%);
   }
 }
 
-// Background Styles
+.btn--success {
+  @extend %btn;
+  @include set-background($success-color);
+  &:hover {
+    background: lighten($success-color, 5%);
+  }
+}
+
+.btn--danger {
+  @extend %btn;
+  @include set-background($danger-color);
+  &:hover {
+    background: lighten($danger-color, 5%);
+  }
+}
+
+/**
+ * Background Styles                                         
+ **/
 .bg {
   &--primary {
     @include set-background($primary-color);
