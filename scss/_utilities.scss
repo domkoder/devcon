@@ -107,6 +107,37 @@
 }
 
 /**
+ * Alerts Styles                                         
+ **/
+%alert {
+  padding: 0.3rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.alert--primary {
+  @extend %alert;
+  @include set-background($primary-color);
+}
+
+.alert--dark {
+  @extend %alert;
+  @include set-background($dark-color);
+}
+
+.alert--success {
+  @extend %alert;
+  @include set-background($success-color);
+}
+
+.alert--danger {
+  @extend %alert;
+  color: #7a1f28;
+  background-color: #f88992;
+}
+
+/**
  * Background Styles                                         
  **/
 .bg {
