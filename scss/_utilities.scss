@@ -3,7 +3,7 @@
  **/
 .container {
   max-width: $max-width;
-  margin: 6rem auto 3rem auto;
+  margin: 3rem auto;
   overflow: hidden;
   padding: 0 2rem;
 }
@@ -16,17 +16,26 @@
   padding: 1.5rem;
 }
 
+.img--round {
+  border-radius: 50%;
+}
+
 /**
  * Text styles                                           
  **/
 .text--x-large {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
+.text--lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .text--large {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -41,11 +50,6 @@
 
 .text--primary {
   color: $primary-color;
-}
-
-.text--lead {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 /**
