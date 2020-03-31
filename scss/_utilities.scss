@@ -20,6 +20,12 @@
   border-radius: 50%;
 }
 
+.line {
+  height: 1px;
+  background-color: #ccc;
+  margin: 1.5rem 0;
+}
+
 /**
  * Text styles                                           
  **/
@@ -65,7 +71,6 @@
   font-size: 1rem;
   font-weight: bold;
   margin-right: 0.5rem;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in;
 }
 
@@ -151,7 +156,7 @@
 
   &--light {
     @include set-background($light-color);
-    border: #ccc 1px solid;
+    border: $primary-color 1px solid;
   }
 
   &--dark {
@@ -168,8 +173,48 @@
 
   &--white {
     @include set-background(#fff);
-    border: #ccc 1px solid;
+    border: $primary-color 1px solid;
   }
+}
+
+/**
+ * Badges Styles                                         
+ **/
+%badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+}
+
+.badge--primary {
+  @extend %badge;
+  border-radius: 5px;
+  @include set-background($primary-color);
+}
+
+.badge--dark {
+  @extend %badge;
+  border-radius: 5px;
+  @include set-background($dark-color);
+}
+
+.badge--light {
+  @extend %badge;
+  border-radius: 5px;
+  @include set-background($light-color);
+}
+
+.badge--success {
+  @extend %badge;
+  border-radius: 5px;
+  @include set-background($success-color);
+}
+
+.badge--danger {
+  @extend %badge;
+  border-radius: 5px;
+  @include set-background($danger-color);
 }
 
 .dark-overlay {
