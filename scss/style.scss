@@ -136,11 +136,11 @@
 
   &__github {
     grid-area: github;
-    border-radius: 5px;
   }
 
   &__repo {
     display: flex;
+    border-radius: 5px;
 
     & > div:first-child {
       flex: 7;

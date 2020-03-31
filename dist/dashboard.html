@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Welcome to the DevConnector</title>
+  </head>
+  <body>
+    <nav class="navbar bg--dark">
+      <h1>
+        <a class="text--white" href="dashboard.html">
+          <i class="fas fa-code">DevConnector</i>
+        </a>
+      </h1>
+
+      <ul class="navbar__list">
+        <li class="navbar__item navbar__item--active">
+          <a class="navbar__link text--white" href="profiles.html">Developers</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link text--white" href="post.html">Posts</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link text--white" href="dashboard.html"><i class="fas fa-user"></i> &nbsp;<span class="sm---hide">Dashboard</span></a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link text--white" href="login.html"><i class="fas fa-sign-out-alt"></i> &nbsp;<span class="sm---hide">Logout</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1 class="large text--primary">
+        DASHBOARD
+      </h1>
+      <p class="text--lead"><i class="fas fa-user"></i> Welcome Nandom Alfred</p>
+
+      <div class="buttons">
+        <a href="#" class="btn--light"> <i class="fas fa-user-circle text--primary"></i> Edit Profile </a>
+
+        <a href="#" class="btn--light"><i class="fab fa-black-tie text--primary"></i> Add Experience </a>
+
+        <a href="#" class="btn--light"><i class="fas fa-graduation-cap text--primary"></i> Add Education </a>
+      </div>
+
+      <h2 class="my--2">Experience Credentials</h2>
+      <table class="table">
+        <thead class="table__head bg--primary">
+          <tr class="table__row">
+            <th class="table__heading">Company</th>
+            <th class="table__heading sm--hide">Title</th>
+            <th class="table__heading sm--hide">Years</th>
+            <th class="table__heading"></th>
+          </tr>
+        </thead>
+        <tbody class="table_body">
+          <tr class="table__row">
+            <td class="table__data">Booking.com</td>
+            <td class="table__data sm--hide">Senior Developer</td>
+            <td class="table__data sm--hide">Sep 2018 - Current</td>
+            <td class="table__data"><button class="btn--danger">Delete</button></td>
+          </tr>
+
+          <tr>
+            <td class="table__data">Managvis</td>
+            <td class="table__data sm--hide">Junior Developer</td>
+            <td class="table__data sm--hide">Sep 2017 - Nov 2018</td>
+            <td class="table__data"><button class="btn--danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="my--2">Education Credentials</h2>
+      <table class="table">
+        <thead class="table__head bg--primary">
+          <tr>
+            <th class="table__heading sm--hide">School</th>
+            <th class="table__heading sm--hide">Degree</th>
+            <th class="table__heading sm--hide">Field</th>
+            <th class="table__heading sm--hide">Years</th>
+            <th class="table__heading"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table__data sm--hide">University of Jos</td>
+            <td class="table__data sm--hide">Bachelors</td>
+            <td class="table__data sm--hide">Computer Science</td>
+            <td class="table__data sm--hide">Sep 2010 - Jan 2014</td>
+            <td class="table__data sm--hide"><button class="btn--danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="my--2">
+        <button class="btn--danger">
+          <i class="fas fa-user-minus">&nbsp; Delete MY Account</i>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
