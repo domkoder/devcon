@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar bg--dark">
       <h1>
-        <a class="text--white" href="dashboard.html">
+        <a class="text--white navbar__logo" href="dashboard.html">
           <i class="fas fa-code">DevConnector</i>
         </a>
       </h1>
@@ -26,11 +26,11 @@
         </li>
 
         <li class="navbar__item">
-          <a class="navbar__link text--white" href="dashboard.html"><i class="fas fa-user"></i> &nbsp;<span class="sm---hide">Dashboard</span></a>
+          <a class="navbar__link text--white" href="dashboard.html"><i class="fas fa-user"></i> &nbsp;<span class="sm--hide">Dashboard</span></a>
         </li>
 
         <li class="navbar__item">
-          <a class="navbar__link text--white" href="login.html"><i class="fas fa-sign-out-alt"></i> &nbsp;<span class="sm---hide">Logout</span></a>
+          <a class="navbar__link text--white" href="login.html"><i class="fas fa-sign-out-alt"></i> &nbsp;<span class="sm--hide">Logout</span></a>
         </li>
       </ul>
     </nav>
@@ -41,12 +41,12 @@
       </h1>
       <p class="text--lead"><i class="fas fa-user"></i> Welcome Nandom Alfred</p>
 
-      <div class="buttons">
-        <a href="create-profile.html" class="btn--light"> <i class="fas fa-user-circle text--primary"></i> Edit Profile </a>
+      <div class="dash-buttons">
+        <a href="create-profile.html" class="btn--light dash-buttons--block"> <i class="fas fa-user-circle text--primary"></i> Edit Profile </a>
 
-        <a href="add-experience.html" class="btn--light"><i class="fab fa-black-tie text--primary"></i> Add Experience </a>
+        <a href="add-experience.html" class="btn--light dash-buttons--block"><i class="fab fa-black-tie text--primary"></i> Add Experience </a>
 
-        <a href="add-education.html" class="btn--light"><i class="fas fa-graduation-cap text--primary"></i> Add Education </a>
+        <a href="add-education.html" class="btn--light dash-buttons--block"><i class="fas fa-graduation-cap text--primary"></i> Add Education </a>
       </div>
 
       <h2 class="my--2">Experience Credentials</h2>
@@ -80,7 +80,7 @@
       <table class="table">
         <thead class="table__head bg--primary">
           <tr>
-            <th class="table__heading sm--hide">School</th>
+            <th class="table__heading">School</th>
             <th class="table__heading sm--hide">Degree</th>
             <th class="table__heading sm--hide">Field</th>
             <th class="table__heading sm--hide">Years</th>
@@ -89,11 +89,11 @@
         </thead>
         <tbody>
           <tr>
-            <td class="table__data sm--hide">University of Jos</td>
+            <td class="table__data">University of Jos</td>
             <td class="table__data sm--hide">Bachelors</td>
             <td class="table__data sm--hide">Computer Science</td>
             <td class="table__data sm--hide">Sep 2010 - Jan 2014</td>
-            <td class="table__data sm--hide"><button class="btn--danger">Delete</button></td>
+            <td class="table__data"><button class="btn--danger">Delete</button></td>
           </tr>
         </tbody>
       </table>

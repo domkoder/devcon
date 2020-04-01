@@ -1,0 +1,61 @@
+@include mQ(700px) {
+  .sm--hide {
+    display: none;
+  }
+
+  // Text Style
+  .text--x-large {
+    font-size: 3rem;
+  }
+
+  .text--lead {
+    font-size: 1rem;
+  }
+
+  .text--large {
+    font-size: 2rem;
+  }
+
+  // Navbar
+  .navbar {
+    display: block;
+    text-align: center;
+    &__list {
+      justify-content: center;
+    }
+    &__logo {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .dash-buttons {
+    &--block {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  // Profiles
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    &--grid {
+      grid-template-areas:
+        'info'
+        'about'
+        'exp'
+        'edu'
+        'github';
+    }
+
+    &__skills {
+      flex-direction: column;
+    }
+  }
+
+  .post {
+    grid-template-columns: 1fr;
+  }
+}

@@ -97,7 +97,7 @@ $space-amounts: (1, 2, 3, 4, 5);
 }
 
 @mixin mQ($size) {
-  @media screen and ($max-width: $size) {
+  @media screen and (max-width: $size) {
     @content;
   }
 }
