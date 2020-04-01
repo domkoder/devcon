@@ -59,7 +59,7 @@
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
   border: 1px solid $primary-color;
-  border-radius: 5px;
+  border-radius: $radius;
   grid-gap: 2rem;
   align-items: center;
   padding: 1rem;
@@ -104,7 +104,7 @@
 
   &__info {
     grid-area: info;
-    border-radius: 5px;
+    border-radius: $radius;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@
 
   &__about {
     grid-area: about;
-    border-radius: 5px;
+    border-radius: $radius;
     text-align: center;
   }
 
@@ -126,12 +126,12 @@
 
   &__exp {
     grid-area: exp;
-    border-radius: 5px;
+    border-radius: $radius;
   }
 
   &__edu {
     grid-area: edu;
-    border-radius: 5px;
+    border-radius: $radius;
   }
 
   &__github {
@@ -140,7 +140,7 @@
 
   &__repo {
     display: flex;
-    border-radius: 5px;
+    border-radius: $radius;
 
     & > div:first-child {
       flex: 7;
@@ -151,5 +151,29 @@
       flex: 3;
       flex-basis: 20%;
     }
+  }
+}
+
+/**
+ * Posts Page
+ **/
+
+.post__form-header {
+  padding: 0.5rem;
+  border-radius: $radius;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  border-radius: $radius;
+  &__img-wrap {
+    text-align: center;
+  }
+
+  &__img--size {
+    width: 100px;
   }
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Welcome to the DevConnector</title>
+  </head>
+  <body>
+    <nav class="navbar bg--dark">
+      <h1>
+        <a class="text--white" href="dashboard.html">
+          <i class="fas fa-code">DevConnector</i>
+        </a>
+      </h1>
+
+      <ul class="navbar__list">
+        <li class="navbar__item navbar__item--active">
+          <a class="navbar__link text--white" href="profiles.html">Developers</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link text--white" href="posts.html">Posts</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link text--white" href="dashboard.html"><i class="fas fa-user"></i> &nbsp;<span class="sm---hide">Dashboard</span></a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link text--white" href="login.html"><i class="fas fa-sign-out-alt"></i> &nbsp;<span class="sm---hide">Logout</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1 class="text--large text--primary">
+        Posts
+      </h1>
+      <p class="text--lead">
+        <i class="fas fa-user"></i>
+        &nbsp;Welcome to the community
+      </p>
+
+      <div class="post__form wrapper">
+        <div class="post__form-header bg--primary">
+          <h3>Say Something</h3>
+        </div>
+
+        <form class="form my--1">
+          <div class="form__group">
+            <textarea name="description" class="form__input" cols="30" rows="5" placeholder="Job Description"></textarea>
+          </div>
+
+          <button type="submit" class="button btn--primary my--1">Submit</button>
+          <button class="button btn--light my--1" href="dashboard.html">Go Back</button>
+        </form>
+      </div>
+
+      <div class="posts">
+        <div class="post bg--white my--1 p--1">
+          <div class="post__img-wrap">
+            <a href="profile.html" class="img--round">
+              <img class="post__img--size" src="/img/avataaars.svg" alt="" />
+              <h4>Nandom Alfred</h4>
+            </a>
+          </div>
+
+          <div>
+            <p class="my--1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque neque officiis dolorem explicabo nostrum reiciendis architecto blanditiis asperiores id. Perferendis tenetur
+              consectetur dolores id adipisci vel voluptates consequatur quibusdam, sequi vero et possimus, doloribus commodi obcaecati fugiat aliquam omnis qui hic sit repudiandae nostrum eius. Quis
+              soluta aliquam sint!
+            </p>
+
+            <button class="btn--light">
+              <i class="fas fa-thumbs-up"></i>
+              <span>4</span>
+            </button>
+
+            <button class="btn--light">
+              <i class="fas fa-thumbs-down"></i>
+              <span></span>
+            </button>
+
+            <a href="post.html" class="btn--primary">Discussion</a>
+          </div>
+        </div>
+
+        <div class="post bg--white my--1 p--1">
+          <div class="post__img-wrap">
+            <a href="profile.html" class="img--round">
+              <img class="post__img--size" src="/img/avataaars.svg" alt="" />
+              <h4>Nandom Alfred</h4>
+            </a>
+          </div>
+
+          <div>
+            <p class="my--1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque neque officiis dolorem explicabo nostrum reiciendis architecto blanditiis asperiores id. Perferendis tenetur
+              consectetur dolores id adipisci vel voluptates consequatur quibusdam, sequi vero et possimus, doloribus commodi obcaecati fugiat aliquam omnis qui hic sit repudiandae nostrum eius. Quis
+              soluta aliquam sint!
+            </p>
+
+            <button class="btn--light">
+              <i class="fas fa-thumbs-up"></i>
+              <span>4</span>
+            </button>
+
+            <button class="btn--light">
+              <i class="fas fa-thumbs-down"></i>
+              <span></span>
+            </button>
+
+            <a href="post.html" class="btn--primary">Discussion</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
